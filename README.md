@@ -22,7 +22,7 @@ First, you need to activate hubot integraiton on slack, and set the address of y
 $ sudo docker run -d --name redis -p 172.17.42.1:6379:6379 dockerfile/redis
 
 # Run volume container for data prsistence
-$ sudo docker run --name logger-storage -v /data busybox
+$ sudo docker run --name logger-storage -v /data/logs busybox
 
 # Run main image
 $ sudo docker run -d \
